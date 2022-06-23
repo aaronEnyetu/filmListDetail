@@ -1,5 +1,18 @@
+body {
+  background-image: url(./filmbg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
 .App {
-  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-logo {
@@ -35,4 +48,46 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.film {
+  margin: 20px;
+}
+
+.film .film-img {
+  width: 200px;
+}
+
+.films {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.film-detail {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+
+.film-detail img {
+  cursor: pointer;
+  width: 400px;
+}
+
+.film-detail .film-data {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.film-detail .film-data p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(80, 209, 248);
+  border-radius: 20px;
+  margin: 10px;
+  padding: 20px;
 }
